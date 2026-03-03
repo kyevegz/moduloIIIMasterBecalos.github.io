@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Generador de contrasena</title>
+</head>
+<body>
+    <form id = "form-password" class = "form">
+        <h1>Generador de contraseña</h1>
+        <div class = "copy-pass">
+            <input type = "text" id = "txtcopy" class = "input-copy">
+        </div>
+        <br>
+        <br>
+        <div class = "dates">
+            <div class = "flex-span">
+                <span class = "spanLong">Longitud</span> <span id = "longitud"></span>
+            </div>
+            <br>
+            <input type = "range" id = "rngLongitud" min = "8" max = "18" step = "1"><br>
+            <input type = "checkbox" id = "chbMayus"> <label for = "chbMayus">Incluir mayúsculas</label><br>
+            <input type = "checkbox" id = "chbMinus"> <label for = "chbMinus"> Incluir minúsculas</label><br>
+            <input type = "checkbox" id = "chbNumbers"> <label for = "chbNumbers"> Incluir números</label><br>
+            <input type = "checkbox" id = "chbSymbol"> <label for = "chbSymbol"> Incluir símbolos</label><br>
+            <br>
+            <button id = "btnGenerar" type = "submit" class = "btn-submit">Generar</button>
+        </div>
+    </form>
+    <script src = "script.js"></script>
+</body>
+</html>
